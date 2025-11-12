@@ -7,6 +7,7 @@ const server = http.createServer((req, res) =>
     const method = req.method;
     switch (url)
     {
+        // //dynamic mode
         case "/" :
            res.statusCode = 200; // 200 est un status
            res.setHeader('Content-Type', "text/html ; charset=utf-8");

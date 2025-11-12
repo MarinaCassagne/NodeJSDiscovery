@@ -4,6 +4,7 @@ const http = require("http");
 const server = http.createServer((req, res) => {
  if (req.url==="/"&& req.method==='GET') { // "/" racine du dossier
     res.writeHead(200, { 'Content-Type': "text/html ; charset=utf-8"});
+    //fixed mode
     return res.end(
         `<!DOCTYPE html>
         <html lang="en">
