@@ -2,7 +2,7 @@ const http = require("http");
 
 // Create a local server to receive data from
 const server = http.createServer((req, res) => {
- if (req.url==="/"&& req.method==='GET') {
+ if (req.url==="/"&& req.method==='GET') { // "/" racine du dossier
     res.writeHead(200, { 'Content-Type': "text/html ; charset=utf-8"});
     return res.end(
         `<!DOCTYPE html>
@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Hello</title>
+            <title>Découverte</title>
         </head>
         <body>
             
