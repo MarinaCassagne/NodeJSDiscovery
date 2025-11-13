@@ -95,7 +95,6 @@ const server = http.createServer((req, res) =>
         default :
             res.status = 404;
             return res.end("Not found"); //Not found login page
-
     };
 
 });
